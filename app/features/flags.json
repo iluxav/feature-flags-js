@@ -1,0 +1,22 @@
+{
+    "register": {
+        "active": false,
+        "name": "Allow user to register"
+    },
+    "auth": {
+        "active": true,
+        "name": "Authentication"
+    },
+    "auth.login": {
+        "active": true,
+        "name": "Authentication login"
+    },
+    "auth.login.facebook": {
+        "active": true,
+        "name": "Authentication login with facebook"
+    },
+    "auth.logout": {
+        "active": true,
+        "name": "Authentication logout"
+    }
+}

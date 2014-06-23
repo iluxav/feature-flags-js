@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="ffDemoApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Feature Flags</title>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="dist/featureFlags.js"></script>
+    <script src="js/vendor/angular.js"></script>
+    <script src="dist/ngFeatureFlags.js"></script>
+    <script src="js/app.js"></script>
+    <link href="dist/assets/css/bootstrap.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container" ng-controller="mainCtrl">
+    <h1>Index {{1+1}}</h1>
+    <p ng-repeat="flag in allData()">
+      {{flag.active}} - {{flag.name}}
+    </p>
+    <span>isRegister {{isRegister()}}</span>
+    <button ng-click="set()">set</button>
+    <div flags="register, auth">
+        <h3>Register feature</h3>
+    </div>
+    <div flags="auth">
+        <h3>auth</h3>
+    </div>
+    <div flags="auth.login">
+        <h3>auth.login</h3>
+    </div>
+    <div flags="auth.login.facebook">
+        <h3>auth.login.facebook</h3>
+    </div>
+    <div flags="auth.logout">
+        <h3>auth.logout</h3>
+    </div>
+</div>
+</body>
+</html>

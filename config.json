@@ -1,0 +1,23 @@
+{
+    "build_dir": "app",
+    "dist_files":{
+        "js": [
+            "src/*.js"
+        ],
+        "css": [
+        ],
+        "assets": [
+            "bower_components/bootstrap/dist/**/*"
+        ]
+    },
+    "vendor_files": {
+        "js": [
+            "bower_components/angular/angular.js",
+            "bower_components/jquery/dist/jquery.min.js"
+        ],
+        "css": [
+        ],
+        "assets": [
+        ]
+    }
+}

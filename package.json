@@ -1,0 +1,30 @@
+{
+  "name": "feature-flags-js",
+  "version": "0.1.0",
+  "description": "Javascript feature flags",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iluxav/feature-flags-js.git"
+  },
+  "keywords": [
+    "javascript",
+    "feature",
+    "flags",
+    "angular.js",
+    "framework"
+  ],
+  "author": "Ilya Vinokurov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iluxav/feature-flags-js/issues"
+  },
+  "homepage": "https://github.com/iluxav/feature-flags-js",
+  "devDependencies": {
+    "gulp": "^3.8.1",
+    "gulp-connect": "^2.0.5"
+  }
+}

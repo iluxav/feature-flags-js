@@ -1,0 +1,33 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+
+# Packages #
+############
+*.7z
+*.rar
+*.zip
+
+
+# Others        #
+#################
+README.html
+app/styles/
+npm-debug.log
+components
+tmp
+.idea/
+node_modules/
+bower_components/
+app/js/vendor/
+app/dist/
+temp
+.tmp
+dist
+package
+.idea
