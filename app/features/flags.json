@@ -4,7 +4,7 @@
         "name": "Allow user to register"
     },
     "auth": {
-        "active": true,
+        "active": false,
         "name": "Authentication"
     },
     "auth.login": {
