@@ -27,3 +27,25 @@ angular.module('ng-ff').directive('flags', function (ffService) {
         }
     };
 });
+
+angular.module('ng-ff').directive('ffDashboard', function (ffService) {
+	return {
+		restrict: 'E',
+		template:'<div style="position: fixed; top:10px; left:10px; width: 300px; box-shadow: 0px 0px 4px black; padding: 20px;">' +
+				'<b>Flags</b>' +
+				'<p ng-repeat="(key,flag) in allData()">' +
+				'<b>{{key}}</b> - ' +
+				'<a href="#" ng-click="toggle(key,flag)"  ng-class="{\'label-success\' : flag.active,\'label-danger\' : !flag.active}" class="label">{{flag.active}}</a>' +
+				'</p>' +
+				'</div>',
+		link: function postLink(scope, element, attrs) {
+			scope.allData=function(){
+				return ffService.getData();
+			};
+			scope.toggle=function(key,flag){
+				var enabled= flag.active;
+				enabled ? ffService.disable(key) : ffService.enable(key);
+			};
+		}
+	};
+});

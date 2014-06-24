@@ -17,3 +17,4 @@ ffDemoApp.controller('mainCtrl', function ($scope, ffService) {
         val == true ? ffService.disable('register') : ffService.enable('register')
     };
 });
+
